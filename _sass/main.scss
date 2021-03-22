@@ -1,11 +1,20 @@
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-
+$grey: #23282c;
 $mainOrange: #ff9800;
 
 body {
   height: 100vh;
+}
+
+p,form,.list-group {
+max-width:60ch;
+margin:auto;
+}
+
+p{
+text-align: justify;
 }
 
 nav{
@@ -45,9 +54,16 @@ a.nav-link{
 footer{
 display: flex;
 justify-content: center;
-height:2em;
+height:3em;
+line-height: 1em;
+padding-top:1em;
 width: 100%;
 top:100vh;
 position: sticky;
-background-color: white;
+background-color: $grey;
+color:$mainOrange;
+& a{
+text-decoration: none;
+color:$mainOrange;
+}
 }
