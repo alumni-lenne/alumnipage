@@ -7,16 +7,16 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link {% if page.url == "/" %} active {% endif %}"  href="{{ / | relative_url }}">Start</a>
+          <a class="nav-link {% if page.url == "/" %} active {% endif %}"  href="{{ site.baseurl }}/">Start</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url == "/about" %} active {% endif %}" " href="{{ /about.html | relative_url }}">Über uns</a>
+          <a class="nav-link {% if page.url == "/about" %} active {% endif %}" " href="{{ site.baseurl }}/about.html">Über uns</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url == "/news" %} active {% endif %}" href="{{ /news.html | relative_url }}">Alumni-News</a>
+          <a class="nav-link {% if page.url == "/news" %} active {% endif %}" href="{{ site.baseurl }}/news.html">Alumni-News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url == "/documents" %} active {% endif %}" href="{{ /documents.html | relative_url }}">Dokumente</a>
+          <a class="nav-link {% if page.url == "/documents" %} active {% endif %}" href="{{ site.baseurl }}/documents.html">Dokumente</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://tools.alumni-lenne.de/amvt/#/login">Login</a>
