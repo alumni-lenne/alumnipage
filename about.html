@@ -18,7 +18,7 @@ headline: "Über uns"
 {% for user in site.data.vorstand %}
     <div class="col-md-4 offset-md-4 col-s-12  mb-5">
         <div class="card">
-            <img  class="card-img-top" src="{{site.baseurl}}{{user.pic}}" alt="{user.name user.role}" loading="lazy">
+            <img  class="card-img-top" src="{{site.baseurl}}{{user.pic}}" alt="{{user.name user.role}}" loading="lazy">
             <div class="card-body">
                 <p class="card-text display-6">{{user.name}}</p>
                 <p class="card-text">{{user.role}} | Abschluss {{user.grad}}</p>
