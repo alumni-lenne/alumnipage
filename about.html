@@ -49,14 +49,15 @@ headline: "Über uns"
     <div class="row">
 
         {% for user in site.data.vorstand %}
-        <div class="col-md-4 col-s-12  mb-5 d-flex align-items-stretch">
+        <div class="col-md-3 col-s-12  mb-5 d-flex align-items-stretch">
             <div class="card">
-                <img class="card-img-top color_flip" src="{{site.baseurl}}{{user.pic}}" alt="{{user.name user.role}}"
+                <img class="card-img-top color_flip" src="{{site.baseurl}}{{user.pic}}" alt="{{user.name}} {{user.role}}"
                     loading="lazy">
                 <div class="card-body">
-                    <p class="card-text display-6">{{user.name}}</p>
+                    <p class="card-text display-6">{{user.first_name}}</p>
+                    <p class="card-text display-6">{{user.last_name}}</p>
                     <p class="card-text">{{user.role}} | Abschluss {{user.grad}}</p>
-                    <p class="card-text">Beruf: {{user.job}}</p>
+                    <p class="card-text">{{user.job}}</p>
                 </div>
             </div>
         </div>
