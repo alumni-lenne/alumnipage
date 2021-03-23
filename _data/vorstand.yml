@@ -6,15 +6,9 @@
 
 - name : "Richard Schuhmann"
   role: "Stv. Vorstandvorsitz"
-  job: "Dualer Student - Wirtschaftsinformatik"
+  job: "Dualer Student - Wirtschaftsinformatik (B.Sc.)"
   grad: "2014"
   pic: "/assets/pics/schuhmann_richard.jpg"
-
-- name : "Luna Jäckel"
-  role: "Beisitz"
-  job: "Studentin"
-  grad: "2020"
-  pic: "/assets/pics/logo.jpg"
 
 - name : "Felix Dittrich"
   role: "Schatzmeister"
@@ -22,18 +16,23 @@
   grad: "2014"
   pic: "/assets/pics/logo.jpg"
 
-- name : "Kristin Adler"
+- name : "Luna Jäckel"
   role: "Beisitz"
   job: "Studentin"
-  grad: "2016"
+  grad: "2020"
   pic: "/assets/pics/logo.jpg"
+
+- name : "Kristin Adler"
+  role: "Beisitz"
+  job: "Studentin - BWL(M.Sc.)"
+  grad: "2016"
+  pic: "/assets/pics/adler_kristin.jpg"
 
 - name : "Toni Thoms"
   role: "Beisitz"
-  job: "Student Ingenieurwissenschaften"
+  job: "Student - Ingenieurwissenschaften"
   grad: "2020"
   pic: "/assets/pics/thoms_toni.jpg"
-
 
 - name : "Claire Koßmann"
   role: "Beisitz"
