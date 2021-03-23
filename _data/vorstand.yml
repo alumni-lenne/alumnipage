@@ -2,43 +2,43 @@
   role: "Vorstandvorsitz"
   job: "Consultant"
   grad: "2015"
-  pic: "/assets/pics/stepponat_felix.jpg"
+  pic: "/assets/pics/stepponat_felix-min.jpg"
 
 - name : "Richard Schuhmann"
   role: "Stv. Vorstandvorsitz"
   job: "Dualer Student - Wirtschaftsinformatik (B.Sc.)"
   grad: "2014"
-  pic: "/assets/pics/schuhmann_richard.jpg"
+  pic: "/assets/pics/schuhmann_richard-min.jpg"
 
 - name : "Felix Dittrich"
   role: "Schatzmeister"
   job: "Irgendwas mit Medien"
   grad: "2014"
-  pic: "/assets/pics/logo.jpg"
+  pic: "/assets/pics/logo-min.jpg"
 
 - name : "Luna Jäckel"
   role: "Beisitz"
   job: "Studentin"
   grad: "2020"
-  pic: "/assets/pics/logo.jpg"
+  pic: "/assets/pics/logo-min.jpg"
 
 - name : "Kristin Adler"
   role: "Beisitz"
   job: "Studentin - BWL(M.Sc.)"
   grad: "2016"
-  pic: "/assets/pics/adler_kristin.jpg"
+  pic: "/assets/pics/adler_kristin-min.jpg"
 
 - name : "Toni Thoms"
   role: "Beisitz"
   job: "Student - Ingenieurwissenschaften"
   grad: "2020"
-  pic: "/assets/pics/thoms_toni.jpg"
+  pic: "/assets/pics/thoms_toni-min.jpg"
 
 - name : "Claire Koßmann"
   role: "Beisitz"
   job: "Studentin - Lehramt Gymnasium"
   grad: "2018"
-  pic: "/assets/pics/kossmann_claire.jpg"
+  pic: "/assets/pics/kossmann_claire-min.jpg"
 
 
  
