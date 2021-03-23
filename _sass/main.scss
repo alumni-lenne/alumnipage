@@ -21,6 +21,10 @@ p{
 text-align: justify;
 }
 
+.card-text{
+  text-align:left
+}
+
 nav{
   background-color: $mainOrange;
 & a{
