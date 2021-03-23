@@ -14,41 +14,24 @@ headline: "Über uns"
 <div class="mt-5">
 <h1 id="vorstand" class="display-5 ">Der Vorstand stellt sich vor</h1>
 <div class="row">
+
+{% for user in site.data.vorstand %}
     <div class="col-md-4 offset-md-4 col-s-12  mb-5">
-        <div class="card ">
-            <img class="card-img-top" src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
-            <div class="card-body">
-                <p class="card-text">Paul Peterson</p>
-                <p class="card-text">Abschluss 2004</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4 offset-md-4  col-s-12 mb-5">
         <div class="card">
-            <img class="card-img-top" style="padding:0;" src="https://randomuser.me/api/portraits/men/71.jpg" alt="">
+            <img class="card-img-top" src="{{site.baseurl}}{{user.pic}}" alt="">
             <div class="card-body">
-                <p class="card-text">Paul Peterson 2</p>
-                <p class="card-text">Abschluss 2004</p>
+                <p class="card-text display-6">{{user.name}}</p>
+                <p class="card-text">{{user.role}} | Abschluss {{user.grad}}</p>
+                <p class="card-text">Beruf: {{user.job}}</p>
             </div>
         </div>
     </div>
-
-    <div class="col-md-4 offset-md-4  col-s-12  mb-5">
-        <div class="card">
-            <img class="card-img-top" style="padding:0;" src="https://randomuser.me/api/portraits/men/74.jpg" alt="">
-            <div class="card-body">
-                <p class="card-text">Paul Peterson 3</p>
-                <p class="card-text">Abschluss 2004</p>
-            </div>
-        </div>
-    </div>
-</div>
+{% endfor %}
 </div>
 
 <div class="mb-5">
-<h1 id="angebot" class="display-2">Das machen wir</h1>
-<p></p>
+<h1 id="angebot" class="display-5">Das machen wir</h1>
+<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis deserunt dignissimos quia in magni
 incidunt, cupiditate sequi ullam repellendus obcaecati labore aliquid reiciendis aperiam optio. Consequatur doloribus
 iure in.
@@ -57,10 +40,11 @@ necessitatibus? Provident qui temporibus, officiis sint illo asperiores maiores 
 consectetur dolor culpa.
 Animi culpa non totam itaque et, id consequatur distinctio quaerat nobis officia debitis commodi libero, amet facere
 dolores ipsam voluptas. Distinctio possimus, atque cupiditate ex dolores debitis itaque eum odio.
+</p>
 </div>
 
 <div class="my-5">
-<h1 id="geschichte" class="display-2">Unsere Geschichte</h1>
+<h1 id="geschichte" class="display-5">Unsere Geschichte</h1>
 <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa sequi sint nam illo odio nemo libero in
         voluptates ratione rem quaerat, mollitia, nobis eius consequatur excepturi qui laborum
         aliquam.</span><span>Autem provident nesciunt sint aperiam libero esse et? Eius, officia quisquam cupiditate

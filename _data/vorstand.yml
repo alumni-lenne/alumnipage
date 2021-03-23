@@ -1,0 +1,45 @@
+- name : "Felix Stepponat"
+  role: "Vorstandvorsitz"
+  job: "Consultant"
+  grad: "2015"
+  pic: "/assets/pics/stepponat_felix.jpg"
+
+- name : "Richard Schuhmann"
+  role: "Stv. Vorstandvorsitz"
+  job: "Dualer Student - Wirtschaftsinformatik"
+  grad: "2014"
+  pic: "/assets/pics/schuhmann_richard.jpg"
+
+- name : "Luna Jäckel"
+  role: "Beisitz"
+  job: "Studentin"
+  grad: "2020"
+  pic: "/assets/pics/logo.jpg"
+
+- name : "Felix Dittrich"
+  role: "Schatzmeister"
+  job: "Irgendwas mit Medien"
+  grad: "2014"
+  pic: "/assets/pics/logo.jpg"
+
+- name : "Kristin Adler"
+  role: "Beisitz"
+  job: "Studentin"
+  grad: "2016"
+  pic: "/assets/pics/logo.jpg"
+
+- name : "Toni Thoms"
+  role: "Beisitz"
+  job: "Student Ingenieurwissenschaften"
+  grad: "2020"
+  pic: "/assets/pics/thoms_toni.jpg"
+
+
+- name : "Claire Koßmann"
+  role: "Beisitz"
+  job: "Studentin - Lehramt Gymnasium"
+  grad: "2018"
+  pic: "/assets/pics/kossmann_claire.jpg"
+
+
+ 
