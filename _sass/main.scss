@@ -22,11 +22,25 @@ h2,p{
 }
 
 p{
+word-break: break-word;
+word-wrap: break-word;
 text-align: justify;
 }
 
 .card-text{
   text-align:left
+}
+
+img.color_flip {
+  filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+  filter: gray; /* IE5+ */
+  filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  transition: all .5s ease-in-out;
+}
+
+img.color_flip:hover {
+  filter: none;
+  filter: grayscale(0);
 }
 
 nav{

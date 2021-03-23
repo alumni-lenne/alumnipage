@@ -4,57 +4,89 @@ headline: "Über uns"
 ---
 
 <div class="text-center">
-<h1 class="display-2 mb-3">{{ page.headline }}</h1>
+    <h1 class="display-2 mb-3">{{ page.headline }}</h1>
 
-<ul class="list-unstyled">
-    <li><a href="#vorstand">#Das sind wir </a></li>
-    <li><a href="#angebot">#Das machen wir </a></li>
-    <li><a href="#geschichte">#Unsere Geschichte</a></li>
-</ul>
+    <ul class="list-unstyled">
+        
+        <li><a href="#aboutus">#Das sind wir</a></li>
+        <li><a href="#angebot">#Das machen wir</a></li>
+        <li><a href="#vorstand">#Der Vorstand</a></li>
+        <li><a href="#geschichte">#Unsere Geschichte</a></li>
+    </ul>
 
-<h1 id="vorstand" class="display-5 mt-5 ">Das sind wir</h1>
-<div class="row">
+    <div class="mb-5">
+        <h1 id="aboutus" class="display-5">Das sind wir</h1>
+        <p>Im Alumni-Verein sind Menschen, die sich mit der Lenné-Schule verbunden fühlen und den Kontakt zu den
+            AbsolventInnen der Lenné-Schule und ihrer ehemaligen Bildungsstätte halten wollen. Der Großteil der
+            Mitglieder
+            sind ehemalige SchülerInnen, LehrerInnen und Eltern, aber auch SchülerInnen und LehrerInnen sowie Personen,
+            die das Schulleben aktuell begleiten. Durch den Verein können sich die Mitglieder weiterhin in der Schule
+            engagieren, indem sie wissenschaftliche Vorträge halten oder
+            Veranstaltungen zur Berufs- und Studienberatung durchführen und dadurch der Schule unterstüzend zur
+            Seite stehen.
+        </p>
+    </div>
 
-{% for user in site.data.vorstand %}
-    <div class="col-md-4 offset-md-4 col-s-12  mb-5">
-        <div class="card">
-            <img  class="card-img-top" src="{{site.baseurl}}{{user.pic}}" alt="{{user.name user.role}}" loading="lazy">
-            <div class="card-body">
-                <p class="card-text display-6">{{user.name}}</p>
-                <p class="card-text">{{user.role}} | Abschluss {{user.grad}}</p>
-                <p class="card-text">Beruf: {{user.job}}</p>
+
+
+    <div class="mb-5">
+        <h1 id="angebot" class="display-5">Das machen wir</h1>
+        <p>Wir unterstützen die Bildungsarbeit durch unsere aktuellen Erfahrungen, beispielsweise in Bezug zu unseren
+            eigenen Ausbildungen oder Studien. Hauptsächlich ist der Alumni Lenné e.V. bei den SchülerInnen der Lenné
+            Schule bekannt für die Alumni-Tage, die in den Abschlussklassen 10 und 13 stattfinden. Hierbei
+            führen Mitglieder des Vereins Workshops durch, die die SchülerInnen auf das Leben nach der Schule
+            vorbereiten sollen. So können die SchülerInnen aus dem Erfahrungsschatz der Ehemaligen profitieren und
+            Fragen in einem anderen Rahmen stellen. Je nach DozentIn werden Themen, wie “Wohnen und Haushalten”,
+            “Studium, Ausbildung und Auslandsaufenthalte vorbereiten” oder “Stärken stärken” behandelt. <br><br>
+
+            Besonders wichtig ist es uns, dass alle SchülerInnen wissen, dass sie zu uns kommen können und wir Ihnen mit
+            Rat und Tat zur Seite stehen. Ob als Mediator, Bewerbungscoach oder Ratgeber - wir sind jederzeit für alle
+            SchülerInnen, aber auch LeherInnen unserer Lenné Schule im Sinne "der Familie zu danken" da
+        </p>
+    </div>
+
+    <h1 id="vorstand" class="display-5 mt-5 ">Der Vorstand</h1>
+    <div class="row">
+
+        {% for user in site.data.vorstand %}
+        <div class="col-md-4 col-s-12  mb-5 d-flex align-items-stretch">
+            <div class="card">
+                <img class="card-img-top color_flip" src="{{site.baseurl}}{{user.pic}}" alt="{{user.name user.role}}"
+                    loading="lazy">
+                <div class="card-body">
+                    <p class="card-text display-6">{{user.name}}</p>
+                    <p class="card-text">{{user.role}} | Abschluss {{user.grad}}</p>
+                    <p class="card-text">Beruf: {{user.job}}</p>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-{% endfor %}
-</div>
 
-<div class="mb-5">
-<h1 id="angebot" class="display-5">Das machen wir</h1>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis deserunt dignissimos quia in magni
-incidunt, cupiditate sequi ullam repellendus obcaecati labore aliquid reiciendis aperiam optio. Consequatur doloribus
-iure in.
-Accusamus, dicta accusantium. Minus obcaecati illo nemo repellendus aut debitis et qui reiciendis numquam
-necessitatibus? Provident qui temporibus, officiis sint illo asperiores maiores architecto eligendi, praesentium dolore
-consectetur dolor culpa.
-Animi culpa non totam itaque et, id consequatur distinctio quaerat nobis officia debitis commodi libero, amet facere
-dolores ipsam voluptas. Distinctio possimus, atque cupiditate ex dolores debitis itaque eum odio.
-</p>
-</div>
+    <div class="my-5">
+        <h1 id="geschichte" class="display-5">Unsere Geschichte</h1>
 
-<div class="my-5">
-<h1 id="geschichte" class="display-5">Unsere Geschichte</h1>
-<p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa sequi sint nam illo odio nemo libero in
-        voluptates ratione rem quaerat, mollitia, nobis eius consequatur excepturi qui laborum
-        aliquam.</span><span>Autem provident nesciunt sint aperiam libero esse et? Eius, officia quisquam cupiditate
-        distinctio temporibus delectus sapiente earum, placeat aspernatur enim voluptas omnis ipsam quidem repudiandae
-        totam dolorum, libero ut quia.</span><span>Iste est quo similique, sunt blanditiis neque eligendi repellendus
-        autem facere quaerat suscipit et rem qui eaque numquam perferendis? Assumenda iste perspiciatis quaerat
-        aspernatur non praesentium totam. Ipsa, at dicta.</span><span>Explicabo perspiciatis sed, obcaecati ex maiores
-        autem repellat unde? Commodi adipisci qui ducimus voluptate ut provident nemo beatae delectus quod a maiores
-        distinctio, eos architecto, quia officia, assumenda voluptas? Vitae.</span><span>Recusandae provident
-        exercitationem consequuntur, tempora a nisi, nemo eius quidem facere sit repellat voluptates illum fuga iste
-        deleniti, itaque numquam quos? Adipisci illo accusamus eaque odit nostrum, nihil rerum pariatur.</span></p>
+        <p>Um die Weihnachtszeit im Jahr 2005 trafen sich eine Handvoll ehemaliger SchülerInnen um Marcel Piest und
+            Alexander Stark im gemeinsamen Gedanken, ihrer ehemaligen Schule etwas zurückgeben zu wollen. Sie gründeten
+            den Alumni Lenné e.V. und seither ist ist der gemeinnützige und aktive Ehemaligenverein Ausdruck der
+            Dankbarkeit aller Vereinsmitglieder für ihre Schulzeit. Jedes Vereinsmitgleid ging von der Schule, mit dem
+            Gefühl, dass diese mehr war, als eine reine Bildungsstätte, viel mehr - es war Familie.</p>
+
+        <div class="text-center my-4 col-md-4 offset-md-4">
+            <img class="img-fluid" src="{{site.baseurl}}/assets/pics/alumnis_alt.jpg">
+            <small>Felix Schrandt, Sarah Edna Schneider, Carolin Schrandt und Julius Hendl </small>
+        </div>
+
+        <p>Motiviert von diesem Gedanken, engagieren sich mehr als 60 Mitglieder seit mehr als 15 Jahren für die Lenné
+            Schule. Ob bei der logistischen oder konzeptionellen Untersützung großer Schulfeste, mit der Ausrichtung
+            diverser Workshops für SchülerInnen, individuellen Beratungen oder Bewerbungstraining oder den den
+            alljährlichen Alumnitagen zur Vorbereitung der Abschlussjahrgänge auf ihr Leben nach der Schulzeit - der
+            Alumni Lenné e.V. hilft und untersützt nach all seinen Kräften die Bildungsarbeit an der Lenné Schule. <br>
+            <br>
+
+            Darüber hinaus ist und bleibt der Verein ein Zusammenschluss von Ehemaligen. Das bedeutet, dass die
+            Organisation und Ausrichtung von Jahrgangstreffen ebenso zu den Aufgaben des Vereins gehört. Mit den Jahren
+            hat es der Verein geschafft, ein fester und institutionalisierter Bestandteil der Bildungsarbeit zu sein.
+        </p>
     </div>
 </div>
