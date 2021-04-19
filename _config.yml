@@ -1,10 +1,10 @@
 title: "Alumni Lenné e.V."
 
 #Production
-url: "https://rischuhm.github.io" 
-baseurl: "/" 
+# url: "https://rischuhm.github.io" 
+# baseurl: "/" 
 
 
 # #Local Dev
-# url: "https://localhost"
-# baseurl: ""
+url: "https://localhost"
+baseurl: ""
