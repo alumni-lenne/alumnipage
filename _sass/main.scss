@@ -10,7 +10,13 @@ body {
   height: 100vh;
 }
 
-p,form,.list-group {
+.headline{
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h1,p,form,.list-group {
 max-width:60ch;
 margin:auto;
 }
