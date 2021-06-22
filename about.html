@@ -5,7 +5,7 @@ title: "Über uns"
 ---
 
 <div class="text-center">
-    <h1 class="display-2 mb-3">{{ page.headline }}</h1>
+    <h1 class="display-4 mb-3">{{ page.headline }}</h1>
 
     <ul class="list-unstyled">
         
@@ -16,7 +16,7 @@ title: "Über uns"
     </ul>
 
     <div class="mb-5">
-        <h1 id="aboutus" class="display-5">Das sind wir</h1>
+        <h1 id="aboutus" class="display-4">Das sind wir</h1>
         <p>Im Alumni-Verein sind Menschen, die sich mit der Lenné-Schule verbunden fühlen und den Kontakt zu den
             AbsolventInnen der Lenné-Schule und ihrer ehemaligen Bildungsstätte halten wollen. Der Großteil der
             Mitglieder
@@ -31,7 +31,7 @@ title: "Über uns"
 
 
     <div class="mb-5">
-        <h1 id="angebot" class="display-5">Das machen wir</h1>
+        <h1 id="angebot" class="display-4">Das machen wir</h1>
         <p>Wir unterstützen die Bildungsarbeit durch unsere aktuellen Erfahrungen, beispielsweise in Bezug zu unseren
             eigenen Ausbildungen oder Studien. Hauptsächlich ist der Alumni Lenné e.V. bei den SchülerInnen der Lenné
             Schule bekannt für die Alumni-Tage, die in den Abschlussklassen 10 und 13 stattfinden. Hierbei
@@ -46,18 +46,19 @@ title: "Über uns"
         </p>
     </div>
 
-    <h1 id="vorstand" class="display-5 mt-5 ">Der Vorstand</h1>
+    <h1 id="vorstand" class="display-4 mt-5 ">Der Vorstand</h1>
     <div class="row justify-content-center">
 
         {% for user in site.data.vorstand %}
-        <div class="col-md-3 col-s-12  mb-5 d-flex align-items-stretch">
+        <div class="col-10 col-sm-3  mb-5  d-flex align-items-stretch">
             <div class="card">
                 <img class="card-img-top color_flip" src="{{site.baseurl}}{{user.pic}}" alt="{{user.name}} {{user.role}}"
                     loading="lazy">
                 <div class="card-body">
-                    <p class="card-text display-6">{{user.first_name}}</p>
-                    <p class="card-text display-6">{{user.last_name}}</p>
-                    <p class="card-text">{{user.role}} | Abschluss {{user.grad}}</p>
+                    <p class="card-text lead">{{user.first_name}} {{user.last_name}}</p>
+                    <p class="card-text lead"></p>
+                    <p class="card-text lead">{{user.role}}</p>
+                    <p class="card-text">Abschluss {{user.grad}}</p>
                     <p class="card-text">{{user.job}}</p>
                 </div>
             </div>
@@ -66,7 +67,7 @@ title: "Über uns"
     </div>
 
     <div class="my-5">
-        <h1 id="geschichte" class="display-5">Unsere Geschichte</h1>
+        <h1 id="geschichte" class="display-4">Unsere Geschichte</h1>
 
         <p>Um die Weihnachtszeit im Jahr 2005 trafen sich eine Handvoll ehemaliger SchülerInnen um Marcel Piest und
             Alexander Stark im gemeinsamen Gedanken, ihrer ehemaligen Schule etwas zurückgeben zu wollen. Sie gründeten
@@ -75,7 +76,7 @@ title: "Über uns"
             Gefühl, dass diese mehr war, als eine reine Bildungsstätte, viel mehr - es war Familie.</p>
 
         <div class="text-center my-4 col-md-4 offset-md-4">
-            <img class="img-fluid" alt="Die ehemaligen Alumnis Felix Schrandt, Sarah Edna Schneider, Carolin Schrandt und Julius Hendl "src="{{site.baseurl}}/assets/pics/alumnis_alt.webp">
+            <img class="img-fluid" alt="Die ehemaligen Alumnis Felix Schrandt, Sarah Edna Schneider, Carolin Schrandt und Julius Hendl" src="{{site.baseurl}}/assets/pics/alumnis_alt.webp">
             <small>Felix Schrandt, Sarah Edna Schneider, Carolin Schrandt und Julius Hendl </small>
         </div>
 

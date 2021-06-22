@@ -1,26 +1,33 @@
 <nav class="navbar navbar-expand-lg px-2 mb-3 navbar-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <a class="navbar-brand display-6" href="{{ site.baseurl }}/">Alumni Lenné e.V.</a>
-   
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item px-2">
-          <a class="nav-link {% if page.url == "/" %} active {% endif %}"  href="{{ site.baseurl }}/"><i class="bi bi-house"></i> Start</a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link {% if page.url == "/about" %} active {% endif %}" " href="{{ site.baseurl }}/about.html"><i class="bi bi-people"></i> Über uns</a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link {% if page.url == "/documents" %} active {% endif %}" href="{{ site.baseurl }}/documents.html"><i class="bi bi-file-earmark-arrow-down"></i> Dokumente</a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link disabled  {% if page.url == "/news" %} active {% endif %}" href="{{ site.baseurl }}/news.html"><i class="bi bi-newspaper"></i> Alumni-News<span class="badge">Coming Soon</span></a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="https://tools.alumni-lenne.de/amvt/#/login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand display-6" href="{{ site.baseurl }}/">Alumni Lenné e.V.</a>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item px-2">
+        <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="{{ site.baseurl }}/"><i
+            class="bi bi-house"></i> Start</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link {% if page.url == '/about' %} active {% endif %}" href="{{ site.baseurl }}/about.html"><i
+            class="bi bi-people"></i> Über uns</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link {% if page.url == '/documents' %} active {% endif %}"
+          href="{{ site.baseurl }}/documents.html"><i class="bi bi-file-earmark-arrow-down"></i> Dokumente</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link disabled  {% if page.url == '/news' %} active {% endif %}"
+          href="{{ site.baseurl }}/news.html"><i class="bi bi-newspaper"></i> Alumni-News<span class="badge">Coming
+            Soon</span></a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link" href="https://tools.alumni-lenne.de/amvt/#/login"><i class="bi bi-box-arrow-in-right"></i>
+          Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
