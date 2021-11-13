@@ -6,8 +6,8 @@ description: "Alle Informationen über den Alumni Lenné Verein, seinen Vorstand
 tags: "Alumni, Geschichte, Vorstand, Tätigkeit, Vorstellung"
 ---
 
-<div class="text-center">
-    <h1 class="headline mb-3">{{ page.headline }}</h1>
+<div style="padding-top: 4rem;" class="container text-center">
+    <h1 class="my_headline mb-3">{{ page.headline }}</h1>
 
     <ul class="list-unstyled">
         
@@ -17,24 +17,30 @@ tags: "Alumni, Geschichte, Vorstand, Tätigkeit, Vorstellung"
         <li class="p-1"><a href="#geschichte">#Unsere Geschichte</a></li>
     </ul>
 
-    <div class="mb-5">
-        <h1 id="aboutus" class="headline mb-4">Das sind wir</h1>
-        <p>Im Alumni-Verein sind Menschen, die sich mit der Lenné-Schule verbunden fühlen und den Kontakt zu den
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="card mt-3 mb-5" style="max-width:60ch">
+        <div class="card-header pb-0 text-white" style="background-color: orange;">
+            <h4>Das sind wir</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Im Alumni-Verein sind Menschen, die sich mit der Lenné-Schule verbunden fühlen und den Kontakt zu den
             AbsolventInnen der Lenné-Schule und ihrer ehemaligen Bildungsstätte halten wollen. Der Großteil der
             Mitglieder
             sind ehemalige SchülerInnen, LehrerInnen und Eltern, aber auch SchülerInnen und LehrerInnen sowie Personen,
             die das Schulleben aktuell begleiten. Durch den Verein können sich die Mitglieder weiterhin in der Schule
             engagieren, indem sie wissenschaftliche Vorträge halten oder
             Veranstaltungen zur Berufs- und Studienberatung durchführen und dadurch der Schule unterstüzend zur
-            Seite stehen.
-        </p>
-    </div>
+            Seite stehen.</p>
+        </div>
+      </div>
 
-
-
-    <div class="mb-5">
-        <h1 id="angebot" class="headline mb-4">Das machen wir</h1>
-        <p>Wir unterstützen die Bildungsarbeit durch unsere aktuellen Erfahrungen, beispielsweise in Bezug zu unseren
+    <div class="card mt-3 mb-5" style="max-width:60ch">
+        <div class="card-header pb-0 text-white" style="background-color: orange;">
+            <h4>Das machen wir</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Wir unterstützen die Bildungsarbeit durch unsere aktuellen Erfahrungen, beispielsweise in Bezug zu unseren
             eigenen Ausbildungen oder Studien. Hauptsächlich ist der Alumni Lenné e.V. bei den SchülerInnen der Lenné
             Schule bekannt für die Alumni-Tage, die in den Abschlussklassen 10 und 13 stattfinden. Hierbei
             führen Mitglieder des Vereins Workshops durch, die die SchülerInnen auf das Leben nach der Schule
@@ -44,15 +50,48 @@ tags: "Alumni, Geschichte, Vorstand, Tätigkeit, Vorstellung"
 
             Besonders wichtig ist es uns, dass alle SchülerInnen wissen, dass sie zu uns kommen können und wir Ihnen mit
             Rat und Tat zur Seite stehen. Ob als Mediator, Bewerbungscoach oder Ratgeber - wir sind jederzeit für alle
-            SchülerInnen, aber auch LeherInnen unserer Lenné Schule im Sinne "der Familie zu danken" da
-        </p>
+            SchülerInnen, aber auch LeherInnen unserer Lenné Schule im Sinne "der Familie zu danken" da</p>
+        </div>
+      </div>
+
+      <div class="card my-5" style="max-width:60ch">
+        <div class="card-header pb-0 text-white" style="background-color: orange;">
+            <h4>Unsere Geschichte</h4>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Um die Weihnachtszeit im Jahr 2005 trafen sich eine Handvoll ehemaliger SchülerInnen um Marcel Piest und
+                Alexander Stark im gemeinsamen Gedanken, ihrer ehemaligen Schule etwas zurückgeben zu wollen. Sie gründeten
+                den Alumni Lenné e.V. und seither ist ist der gemeinnützige und aktive Ehemaligenverein Ausdruck der
+                Dankbarkeit aller Vereinsmitglieder für ihre Schulzeit. Jedes Vereinsmitgleid ging von der Schule, mit dem
+                Gefühl, dass diese mehr war, als eine reine Bildungsstätte, viel mehr - es war Familie.</p>
+    
+            <div class="m-3">
+                <img class="img-fluid" alt="Die ehemaligen Alumnis Felix Schrandt, Sarah Edna Schneider, Carolin Schrandt und Julius Hendl" src="{{site.baseurl}}/assets/pics/alumnis_alt.webp">
+                <small>Felix Schrandt, Sarah Edna Schneider, Carolin Schrandt und Julius Hendl </small>
+            </div>
+    
+            <p class="card-text">Motiviert von diesem Gedanken, engagieren sich mehr als 60 Mitglieder seit mehr als 15 Jahren für die Lenné
+                Schule. Ob bei der logistischen oder konzeptionellen Untersützung großer Schulfeste, mit der Ausrichtung
+                diverser Workshops für SchülerInnen, individuellen Beratungen oder Bewerbungstraining oder den den
+                alljährlichen Alumnitagen zur Vorbereitung der Abschlussjahrgänge auf ihr Leben nach der Schulzeit - der
+                Alumni Lenné e.V. hilft und untersützt nach all seinen Kräften die Bildungsarbeit an der Lenné Schule. <br>
+                <br>
+    
+                Darüber hinaus ist und bleibt der Verein ein Zusammenschluss von Ehemaligen. Das bedeutet, dass die
+                Organisation und Ausrichtung von Jahrgangstreffen ebenso zu den Aufgaben des Vereins gehört. Mit den Jahren
+                hat es der Verein geschafft, ein fester und institutionalisierter Bestandteil der Bildungsarbeit zu sein.
+            </p>
+        </div>
+      </div>
+
     </div>
 
+
     <h1 id="vorstand" class="headline mt-5 mb-4 ">Der Vorstand</h1>
-    <div class="row justify-content-center">
+    <div class="d-flex flex-wrap gap-3 justify-content-center my-5">
 
         {% for user in site.data.vorstand %}
-        <div class="col-10 col-sm-3  mb-5  d-flex align-items-stretch">
+        <div style="max-width: 18em;">
             <div class="card">
                 <img class="card-img-top color_flip" src="{{site.baseurl}}{{user.pic}}" alt="{{user.name}} {{user.role}}"
                     loading="lazy">
@@ -67,31 +106,5 @@ tags: "Alumni, Geschichte, Vorstand, Tätigkeit, Vorstellung"
         </div>
         {% endfor %}
     </div>
-
-    <div class="mb-5">
-        <h1 id="geschichte" class="headline mb-4">Unsere Geschichte</h1>
-
-        <p>Um die Weihnachtszeit im Jahr 2005 trafen sich eine Handvoll ehemaliger SchülerInnen um Marcel Piest und
-            Alexander Stark im gemeinsamen Gedanken, ihrer ehemaligen Schule etwas zurückgeben zu wollen. Sie gründeten
-            den Alumni Lenné e.V. und seither ist ist der gemeinnützige und aktive Ehemaligenverein Ausdruck der
-            Dankbarkeit aller Vereinsmitglieder für ihre Schulzeit. Jedes Vereinsmitgleid ging von der Schule, mit dem
-            Gefühl, dass diese mehr war, als eine reine Bildungsstätte, viel mehr - es war Familie.</p>
-
-        <div class="text-center my-4 col-md-4 offset-md-4">
-            <img class="img-fluid" alt="Die ehemaligen Alumnis Felix Schrandt, Sarah Edna Schneider, Carolin Schrandt und Julius Hendl" src="{{site.baseurl}}/assets/pics/alumnis_alt.webp">
-            <small>Felix Schrandt, Sarah Edna Schneider, Carolin Schrandt und Julius Hendl </small>
-        </div>
-
-        <p>Motiviert von diesem Gedanken, engagieren sich mehr als 60 Mitglieder seit mehr als 15 Jahren für die Lenné
-            Schule. Ob bei der logistischen oder konzeptionellen Untersützung großer Schulfeste, mit der Ausrichtung
-            diverser Workshops für SchülerInnen, individuellen Beratungen oder Bewerbungstraining oder den den
-            alljährlichen Alumnitagen zur Vorbereitung der Abschlussjahrgänge auf ihr Leben nach der Schulzeit - der
-            Alumni Lenné e.V. hilft und untersützt nach all seinen Kräften die Bildungsarbeit an der Lenné Schule. <br>
-            <br>
-
-            Darüber hinaus ist und bleibt der Verein ein Zusammenschluss von Ehemaligen. Das bedeutet, dass die
-            Organisation und Ausrichtung von Jahrgangstreffen ebenso zu den Aufgaben des Vereins gehört. Mit den Jahren
-            hat es der Verein geschafft, ein fester und institutionalisierter Bestandteil der Bildungsarbeit zu sein.
-        </p>
-    </div>
+    
 </div>
