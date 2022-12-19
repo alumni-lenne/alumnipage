@@ -29,9 +29,9 @@
 - first_name : "Antonia"
   last_name: "Ortel"
   role: "Beisitz"
-  job: "tbd"
-  grad: "tbd"
-  pic: "/assets/pics/logo-min_no_text.webp"
+  job: "Studentin - Informations- und Datenmanagement"
+  grad: "2020"
+  pic: "/assets/pics/antonia_ortel.webp"
 
 - first_name : "Darius"
   last_name:  "Hartung"
