@@ -1,44 +1,20 @@
-- first_name : "Felix"
-  last_name: "Stepponat"
-  role: "Vorstandvorsitz"
-  job: "Consultant"
-  grad: "2016"
-  pic: "/assets/pics/stepponat_felix-min.webp"
-
-- first_name : "Claire"
-  last_name: "Koßmann"
-  role: "Stv. Vorstandsvorsitz"
-  job: "Studentin - Lehramt Gymnasium"
-  grad: "2018"
-  pic: "/assets/pics/kossmann_claire-min.webp"
-
-- first_name : "Felix"
-  last_name: "Dittrich"
-  role: "Schatzmeister"
-  job: "System Engineer"
-  grad: "2014"
-  pic: "/assets/pics/dittrich-felix-min.webp"
-
-- first_name : "Luna"
-  last_name: "Jäckel" 
-  role: "Beisitz"
-  job: "Studentin - Lehramt Gymnasium"
-  grad: "2020"
-  pic: "/assets/pics/jaeckel_luna-min.webp"
-
 - first_name : "Antonia"
   last_name: "Ortel"
   role: "Beisitz"
-  job: "Studentin - Informations- und Datenmanagement"
   grad: "2020"
-  pic: "/assets/pics/antonia_ortel.webp"
 
 - first_name : "Darius"
   last_name:  "Hartung"
   role: "Beisitz"
-  job: "tbd"
   grad: "tbd"
-  pic: "/assets/pics/logo-min_no_text.webp"
 
+- first_name : "Emily"
+  last_name:  "Moltmann"
+  role: "Beisitz"
+  grad: "tbd"
 
- 
+- first_name : "Luna"
+  last_name: "Jäckel" 
+  role: "Beisitz"
+  grad: "2020"
+

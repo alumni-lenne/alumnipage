@@ -1,0 +1,15 @@
+- first_name : "Claire"
+  last_name: "Koßmann"
+  role: "Vorstandsvorsitz"
+  job: "Studentin"
+  grad: "2018"
+
+- first_name : "Leena"
+  last_name: "Seifert"
+  role: "stellv. Vorstandsvorsitz"
+  grad: "2020"
+
+- first_name : "Felix"
+  last_name: "Dittrich"
+  role: "Schatzmeister"
+  grad: "2014"
