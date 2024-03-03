@@ -7,87 +7,78 @@ $grey: #23282c;
 $mainOrange: #ff9800;
 $secondaryOrange: #FFC0BA;
 
-*{
+* {
   font-family: roboto;
 }
 
-.card{
-    scroll-margin-top: 75px ;
+.card {
+  scroll-margin-top: 75px;
 }
 
-.btn-orange{
-  background-color:$mainOrange;
+.btn-orange {
+  background-color: $mainOrange;
   border-color: $mainOrange;
 }
 
-p{
+p {
   font-weight: 300;
 }
 
-.my_headline{
+.my_headline {
   font-size: 3rem;
   font-weight: 100 !important;
   line-height: 1.2;
 }
 
-h1,p,form,.list-group {
-// max-width:60ch;
-margin:auto;
+h1, p, form, .list-group {
+  // max-width:60ch;
+  margin: auto;
 }
 
-.nav-link.disabled{
-color: $grey !important;
-& span{
-color: $grey !important;
-}
+.nav-link.disabled {
+  color: $grey !important;
+
+  & span {
+    color: $grey !important;
+  }
 }
 
-.badge{
-transform: rotate(-15deg);  
+.badge {
+  transform: rotate(-15deg);
 }
 
-ul a{
+ul a {
   text-decoration: none;
 }
 
-h2,p{
+h2, p {
   display: block;
 }
 
 
-.card-text{
-  text-align:left
+.card-text {
+  text-align: left
 }
 
-img.color_flip {
-  filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-  filter: gray; /* IE5+ */
-  filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-  transition: all .5s ease-in-out;
-}
-
-img.color_flip:hover {
-  filter: none;
-  filter: grayscale(0);
-}
-
-nav{
+nav {
   background-image: linear-gradient(to right, #ff9800, #ff9f00, #ffa602, #ffad06, #ffb40b);
 
-& a{
-  color:black;
-  text-decoration: none;
-}
-& a:hover{
-  color:black;
-}
-& .active{
-color: $bodyColor;  
-}
+  & a {
+    color: black;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: black;
+  }
+
+  & .active {
+    color: $bodyColor;
+  }
 }
 
-.navbar-brand{
-margin:auto !important
+.navbar-brand {
+  margin: auto !important
 }
 
 input {
@@ -96,30 +87,31 @@ input {
   border-left-style: hidden;
   border-bottom-style: groove;
   outline: none;
-  }
+}
 
-a.nav-link{
+a.nav-link {
   color: black
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 3em;
+  line-height: 1em;
+  padding-top: 1em;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-image: linear-gradient(to right, #23282c, #292c2f, #2f3033, #343436, #393939);
+  color: $mainOrange;
+
+  & a {
+    text-decoration: none;
+    color: $mainOrange;
   }
 
-
-
-footer{
-display: flex;
-justify-content: center;
-height:3em;
-line-height: 1em;
-padding-top:1em;
-width: 100%;
-position: sticky;
-bottom:0;
-background-image: linear-gradient(to right, #23282c, #292c2f, #2f3033, #343436, #393939);
-color:$mainOrange;
-& a{
-text-decoration: none;
-color:$mainOrange;
-}
-& a:hover{
-  color:white;
-}
+  & a:hover {
+    color: white;
+  }
 }
