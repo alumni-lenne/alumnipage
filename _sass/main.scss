@@ -4,8 +4,7 @@ $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: 'Roboto', sans-serif;
 $grey: #23282c;
-$mainOrange: #ff9800;
-$secondaryOrange: #FFC0BA;
+$mainBlue: #02578e;
 
 * {
   font-family: roboto;
@@ -15,9 +14,9 @@ $secondaryOrange: #FFC0BA;
   scroll-margin-top: 75px;
 }
 
-.btn-orange {
-  background-color: $mainOrange;
-  border-color: $mainOrange;
+.btn-blue {
+  background-color: $mainBlue;
+  border-color: $mainBlue;
 }
 
 p {
@@ -61,7 +60,7 @@ h2, p {
 }
 
 nav {
-  background-image: linear-gradient(to right, #ff9800, #ff9f00, #ffa602, #ffad06, #ffb40b);
+  background-color: $mainBlue;
 
   & a {
     color: black;
@@ -104,11 +103,11 @@ footer {
   position: sticky;
   bottom: 0;
   background-image: linear-gradient(to right, #23282c, #292c2f, #2f3033, #343436, #393939);
-  color: $mainOrange;
+  color: $mainBlue;
 
   & a {
     text-decoration: none;
-    color: $mainOrange;
+    color: $mainBlue;
   }
 
   & a:hover {
